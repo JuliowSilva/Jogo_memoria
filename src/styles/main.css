@@ -74,9 +74,7 @@ h2{
     content: "";
     position: absolute;
     inset: 0;
-    background-image:url(/src/image/backgr.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:url(/src/image/backgr.jpg) no-repeat center / cover, linear-gradient(135deg, #222, #555);
     transition: 0.25s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
@@ -88,10 +86,7 @@ h2{
     transform: rotateY(0deg);
 }
 
-.boxMatch::after{
-
-}
-
+.boxMatch::after,
 .boxOpen::after{
     transform: rotateY(180deg);
 }
